@@ -7,7 +7,9 @@ pages:
   - [google-apps-admin.md, 'Google Apps for Nonprofits', 'Google Apps for Nonprofits Admin Pages']
   - [google-api.md, 'Google Apps for Nonprofits', 'Information about Google Apps API']
   - [legacy.md, 'Legacy', 'Legacy Websites']
-  - [doc-tools.md, 'Other Technology', 'Documentation Tools']
+  - [doc-editing.md, 'Other Technology', 'Editing This Documentation']
+  - [bugs-and-feature-requests.md, 'Other Technology', 'Bugs and Feature Requests']
+  - [project-documentation.md, 'Other Technology', 'Project Documentation']
   - [vcs.md, 'Other Technology', 'Source Code Repositories']
 theme: readthedocs
 site_author: ""
