@@ -1,3 +1,3 @@
-https://www.facebook.com/groups/scawest
+[West Kingdom Facebook Group](https://www.facebook.com/groups/scawest)
 
 Unofficial?  Not documented here?  At least acknowledge it as out-of-scope, perhaps.

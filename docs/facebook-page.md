@@ -1,4 +1,4 @@
-https://www.facebook.com/WestKingdom?ref=bookmarks
+[West Kingdom Facebook Page](https://www.facebook.com/WestKingdom)
 
 URL to configuration pages
 
