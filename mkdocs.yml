@@ -2,6 +2,8 @@ site_name: West Kingdom docs
 pages:
   - [index.md, 'Home']
   - [website-overview.md, 'Unified Website System', 'Website Overview']
+  - [facebook-page.md, 'Social Media', 'Facebook Page']
+  - [facebook-group.md, 'Social Media', 'Facebook Group']
   - [google-apps-services.md, 'Google Apps for Nonprofits', 'Google Apps Services']
   - [google-apps-application.md, 'Google Apps for Nonprofits', 'Applying for Google Apps for Nonprofits']
   - [google-apps-admin.md, 'Google Apps for Nonprofits', 'Admin Pages']
