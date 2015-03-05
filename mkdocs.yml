@@ -2,6 +2,11 @@ site_name: West Kingdom docs
 pages:
   - [index.md, 'Home']
   - [website-overview.md, 'Unified Website System', 'Website Overview']
+  - [branch-group-requirements.md, 'Unified Website System', 'Branch Group Requirements']
+  - [website-implementation-and-configuration.md, 'Unified Website System', 'Website Implementation and Configuration']
+  - [website-deployment.md, 'Unified Website System', 'Website Deployment']
+  - [website-testing.md, 'Unified Website System', 'Website Testing']
+  - [website-backup.md, 'Unified Website System', 'Website Backup']
   - [facebook-page.md, 'Social Media', 'Facebook Page']
   - [facebook-group.md, 'Social Media', 'Facebook Group']
   - [google-apps-services.md, 'Google Apps for Nonprofits', 'Google Apps Services']

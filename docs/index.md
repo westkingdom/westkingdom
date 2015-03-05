@@ -14,4 +14,4 @@ The West Kingdom infrastructure consists of a number of different components:
 - [Documentation tools](doc-editing.md), such as ReadTheDocs and GitHub issue queues.
 - [Legacy websites](legacy.md), still running on our older hosting provider.
 
-The old design center is at https://wkweb.westkingdom.org.  Content from that site is being migrated here.
+The old design center is at https://wkweb.westkingdom.org.  In particular, see the introduction and scope statement at the [West Kingdom Website Grand Unification Theory Page](http://www.wkweb.westkingdom.org/documentation/west-kingdom-website-grand-unification-theory).
