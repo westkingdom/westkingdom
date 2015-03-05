@@ -1,4 +1,4 @@
-## How to Edit the Documentation
+## Documentation Overview
 The West Kingdom infrastructure project uses open-source documentation
 and issue-tracking tools, so that a diverse group of volunteers with
 differing technical backgrounds can easily collaborate together.
