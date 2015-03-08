@@ -82,7 +82,7 @@ authorized for the services it needs to access on the
 the admin console for your organization.  Please see the
 Google documentation on [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/accounts/docs/OAuth2ServiceAccount).
 
-See the [Google API service account documentation](https://developers.google.com/accounts/docs/OAuth2?hl=en_US#serviceaccount) for more
+See the [Google API service account documentation](https://developers.google.com/accounts/docs/OAuth2?hl=en_US#serviceaccount) and the [PHP API client library service account documentation](https://developers.google.com/api-client-library/php/auth/service-accounts) for more
 information.  There is [sample code for connecting with an
 OAuth key](https://github.com/google/google-api-php-client/blob/master/examples/service-account.php) available,
 but you won't need it; our wrapper API takes care of this.
