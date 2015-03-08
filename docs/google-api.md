@@ -9,37 +9,21 @@ I created a general holding project for all West Kingdom API
 use:
 
 - **Name:** West Kingdom
-- **Project ID:** west-web-1066
+- **Project ID:** west-kingdom-1066
 
 At this point, I do not know if there will ever be any point
-in having more than one project.
+in having more than one project.  It is possible to create
+multiple service accounts in one project, and each service
+account can have different permissions.  See below.
 
 ### Enabled APIs
 
 Before using Google APIs, it is necessary
-to [enable the ones you are going to use](https://console.developers.google.com/project/west-web-1066/apiui/api).  The one we need
-the most for our first project is the Groups Settings API.
+to [enable the ones you are going to use](https://console.developers.google.com/project/west-web-1066/apiui/api).
+I enabled the Groups Settings API and Groups Migration
+APIs to start with.
 I turned on a number of others that looked like they might
 be of some use; a few other services were on by default.
-
-The initial list of enabled APIs includes:
-
-- Admin SDK       
-- Analytics API       
-- Apps Activity API       
-- Audit API       
-- BigQuery API  
-- Calendar API      
-- Debuglet Controller API     
-- Gmail API       
-- Google Cloud SQL      
-- Google Cloud Storage      
-- Google Cloud Storage JSON API       
-- Google Webmaster Tools API      
-- Google+ API       
-- Google+ Hangouts API      
-- Groups Migration API      
-- Groups Settings API       
 
 ### API Keys
 
@@ -56,6 +40,52 @@ it has a dynamic IP address, so this would not be useful.
 The API must be kept secret, so it cannot be recorded here.
 It can be found in the [credentials section](https://console.developers.google.com/project/west-web-1066/apiui/credential)
 of the Google Deveper Console.
+
+Create a directory called ~/.google-api in your home directory,
+and create a file called "server.key".  This file should contain
+the West Kingdom API key.  Our wrapper API will look for the key
+here.  It will also check in /etc/google-api/server.key, if you
+prefer a global location.
+
+### OAuth Keys
+
+API keys are not sufficient to access certain user data through
+the Google APIs; in order to call these restricted functions, you
+need an OAuth Key.  These are also generated in the
+[credentials section](https://console.developers.google.com/project/west-web-1066/apiui/credential)
+of the Google Deveper Console.
+
+Click on the "Create new ClientID" button, and create a client
+ID for a service account.  The private key will be downloaded
+to your computer; you must manage this key yourself.  Store it
+in the same directory as the API key file 'server.key' (i.e.,
+~/.google-api or /etc/google-api).  Make sure to give this
+file restrictive permissions (e.g. chmod 600).
+
+Next, create a file
+in the same directory called 'service-account.yaml'.  It
+should contain the following information:
+```
+client-id: 278...-keq...apps.googleusercontent.com
+email-address: 278..-keq...@developer.gserviceaccount.com
+key-file: West Kingdom-ce8e17968820.p12
+```
+In your copy of this file, you will want to replace the
+'client-id' and 'email-address' with the information for
+your service account shown in the [credentials section](https://console.developers.google.com/project/west-web-1066/apiui/credential)
+of the Google Deveper Console. The key-file should
+contain the filename that you saved your private key as.
+
+It is also necessary that your service account be
+authorized for the services it needs to access on the
+[Manage API client access](https://admin.google.com/westkingdom.org/AdminHome?chromeless=1#OGX:ManageOauthClients) page of
+the admin console for your organization.  Please see the
+Google documentation on [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/accounts/docs/OAuth2ServiceAccount).
+
+See the [Google API service account documentation](https://developers.google.com/accounts/docs/OAuth2?hl=en_US#serviceaccount) for more
+information.  There is [sample code for connecting with an
+OAuth key](https://github.com/google/google-api-php-client/blob/master/examples/service-account.php) available,
+but you won't need it; our wrapper API takes care of this.
 
 ### PHP API
 
