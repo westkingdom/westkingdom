@@ -20,12 +20,13 @@ account can have different permissions.  See below.
 
 Before using Google APIs, it is necessary
 to [enable the ones you are going to use](https://console.developers.google.com/project/west-web-1066/apiui/api).
-I enabled the Groups Settings API and Groups Migration
-APIs to start with.
-I turned on a number of others that looked like they might
-be of some use; a few other services were on by default.
+I enabled the Admin SDK, the Groups Settings API and 
+Groups Migration APIs to start with.
 
 ### API Keys
+
+You can skip this part, and just create service accounts
+using OAuth Keys, per the instructions in the next section.
 
 The Google PHP API documentation includes [instructions on 
 how to create an API key](https://developers.google.com/api-client-library/php/auth/api-keys).
@@ -37,17 +38,18 @@ I don't expect to actually access Google APIs from here with any
 regularity).  I would have included my home server as well, except
 it has a dynamic IP address, so this would not be useful.
 
-The API must be kept secret, so it cannot be recorded here.
+The API key must be kept secret, so it cannot be recorded here.
 It can be found in the [credentials section](https://console.developers.google.com/project/west-web-1066/apiui/credential)
-of the Google Deveper Console.
-
-Create a directory called ~/.google-api in your home directory,
-and create a file called "server.key".  This file should contain
-the West Kingdom API key.  Our wrapper API will look for the key
-here.  It will also check in /etc/google-api/server.key, if you
-prefer a global location.
+of the Google Deveper Console.  We don't need the API key,
+though; using just OAuth Keys works fine.
 
 ### OAuth Keys
+
+If you have ssh access into the westkingdom.org web server,
+you can just copy the contents of /etc/google-api on the
+server to ~/.google-api on your development machine.  Read
+on if you need to create your own keys, or modify the server
+keys to enable more services.
 
 API keys are not sufficient to access certain user data through
 the Google APIs; in order to call these restricted functions, you
@@ -91,6 +93,7 @@ but you won't need it; our wrapper API takes care of this.
 
 - [PHP Google Apps API](https://developers.google.com/api-client-library/php/)
 - [API Exporer](http://developers.google.com/apis-explorer)
+- [Manage Groups](https://developers.google.com/admin-sdk/directory/v1/guides/manage-groups)
 
 ### Rough notes on what we are going to do with the API
 
