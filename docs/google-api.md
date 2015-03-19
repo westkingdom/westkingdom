@@ -71,12 +71,18 @@ should contain the following information:
 client-id: 278...-keq...apps.googleusercontent.com
 email-address: 278..-keq...@developer.gserviceaccount.com
 key-file: West Kingdom-ce8e17968820.p12
+key-file-password: notasecret
+delegate-user-email: user-with-superadmin@westkingdom.org
 ```
 In your copy of this file, you will want to replace the
 'client-id' and 'email-address' with the information for
 your service account shown in the [credentials section](https://console.developers.google.com/project/west-web-1066/apiui/credential)
 of the Google Deveper Console. The key-file should
-contain the filename that you saved your private key as.
+contain the filename that you saved your private key as;
+the key-file-password is necessary only if you changed the
+default.  The delegate user email address is very important;
+your service account will be granted all of the priviledges
+of the user that you name here.
 
 It is also necessary that your service account be
 authorized for the services it needs to access on the
