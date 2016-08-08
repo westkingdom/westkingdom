@@ -18,6 +18,7 @@ pages:
   - [bugs-and-feature-requests.md, 'Infrastructure Administration', 'Bugs and Feature Requests']
   - [project-documentation.md, 'Infrastructure Administration', 'Project Documentation']
   - [vcs.md, 'Infrastructure Administration', 'Source Code Repositories']
+  - [service-monitoring.md, 'Infrastructure Administration', 'Service Monitoring']
 theme: readthedocs
 site_author: ""
 repo_url: https://github.com/westkingdom/westkingdom
