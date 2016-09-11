@@ -13,6 +13,7 @@ pages:
   - [google-apps-application.md, 'Google Apps for Nonprofits', 'Applying for Google Apps for Nonprofits']
   - [google-apps-admin.md, 'Google Apps for Nonprofits', 'Admin Pages']
   - [google-api.md, 'Google Apps for Nonprofits', 'Google Apps APIs']
+  - [google-mx.md, 'Google Apps for Nonprofits', 'Configuring email lists for a Branch Group']
   - [legacy.md, 'Legacy', 'Legacy Websites']
   - [doc-editing.md, 'Infrastructure Administration', 'Editing This Documentation']
   - [bugs-and-feature-requests.md, 'Infrastructure Administration', 'Bugs and Feature Requests']
