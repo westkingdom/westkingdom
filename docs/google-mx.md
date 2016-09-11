@@ -37,3 +37,10 @@ That should be all that is necessary; however, if this is a brand-new group that
 
 The westkingdom.org user records, combined with the memberships of the officer groups on that site, as managed by the [Regnum](http://westkingdom.org) submission process are what actualy controls the creation of the email lists. Do not use the Google admin pages to create lists or alter memberships, as the automated system will overwrite this information on the next update.
 
+### Determining Branch Groups the Need Configuration
+
+Run this script (Mac or Linux):
+```
+(for g in $(grep '^[^ ]' server.westkingdom.org.yaml | sed -e 's/:$//' | sort) ; do host "$g.westkingdom.org" ; done) | grep 'mail is handled by' | grep -v GOOGLE | awk '{print $1}' | sort | uniq
+```
+The result will show any branch group that has officers who have approved Regnum forms, but that have **not** been configured to send email through Google apps.
