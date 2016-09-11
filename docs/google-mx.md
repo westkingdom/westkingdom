@@ -39,8 +39,12 @@ The westkingdom.org user records, combined with the memberships of the officer g
 
 ### Determining Branch Groups the Need Configuration
 
-Run this script (Mac or Linux):
+First, you need the groups yaml file:
 ```
-(for g in $(grep '^[^ ]' server.westkingdom.org.yaml | sed -e 's/:$//' | sort) ; do host "$g.westkingdom.org" ; done) | grep 'mail is handled by' | grep -v GOOGLE | awk '{print $1}' | sort | uniq
+drush @wkweb.stage wkx > westkingdom-groups.yaml
+```
+Next, run this script (Mac or Linux):
+```
+(for g in $(grep '^[^ ]' westkingdom-groups.yaml | sed -e 's/:$//' | sort) ; do host "$g.westkingdom.org" ; done) | grep 'mail is handled by' | grep -v GOOGLE | awk '{print $1}' | sort | uniq
 ```
 The result will show any branch group that has officers who have approved Regnum forms, but that have **not** been configured to send email through Google apps.
