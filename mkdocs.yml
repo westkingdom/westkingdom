@@ -1,4 +1,7 @@
 site_name: West Kingdom docs
+theme: readthedocs
+repo_url: https://github.com/westkingdom/westkingdom
+include_search: true
 pages:
   - [index.md, 'Home']
   - [website-overview.md, 'Unified Website System', 'Website Overview']
@@ -20,8 +23,5 @@ pages:
   - [project-documentation.md, 'Infrastructure Administration', 'Project Documentation']
   - [vcs.md, 'Infrastructure Administration', 'Source Code Repositories']
   - [service-monitoring.md, 'Infrastructure Administration', 'Service Monitoring']
-theme: readthedocs
 site_author: ""
-repo_url: https://github.com/westkingdom/westkingdom
-include_search: true
 #use_directory_urls: false
