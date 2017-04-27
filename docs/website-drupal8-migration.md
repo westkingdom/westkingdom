@@ -1,4 +1,4 @@
-Organize developmetn of westkingdom.org on Drupal 8.
+Organize development of westkingdom.org on Drupal 8.
 
 **Development Site**
 - [GitHub](https://github.com/westkingdom/wk8)
